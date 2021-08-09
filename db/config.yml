@@ -1,0 +1,11 @@
+default: &default
+  adapter: postgresql
+  encoding: unicode
+  pool: 5
+  host: localhost
+  username: postgres
+  password: postgres
+
+development:
+  <<: *default
+  database: s3_stream_development
